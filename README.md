@@ -5,7 +5,7 @@ the code is available to the public and i included almost all of the weapons in 
 ---
 ## how to use
 1. download python
-2. using pip, install pyautogui, tkinter and pynput
+2. using pip, install pyautogui and pynput
 3. run the program
 4. go into shooting range
 5. select an operator
