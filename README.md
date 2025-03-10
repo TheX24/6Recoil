@@ -11,12 +11,13 @@ the code is available to the public and i included all of the weapons in r6
 - always on top (toggleable)
 - turns off caps lock when writing in chat (toggleable)
 - auto writes gl,hf,gg,wp in chat with f1 and f2
+- random operator select for fun
 
 ---
 ## setup
 1. install python from [ms store](https://apps.microsoft.com/detail/9NRWMJP3717K)
-2. install pynput by running this in cmd: `pip install pynput`
-3. run the program
+2. install dependecies by running this in powershell: `pip install pynput;pip install sv_ttk`
+3. run the program (if you want to use my config keep following)
 4. go into shooting range
 5. select an operator
 6. select the operator's gun in the program
