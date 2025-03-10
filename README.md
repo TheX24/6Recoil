@@ -1,6 +1,6 @@
 # r6recoil
 a python program made by my beloved chatgpt to control the recoil in the famous tom clancy's book game adaptation  
-the code is available to the public and i included almost all of the weapons in r6
+the code is available to the public and i included all of the weapons in r6
 
 ---
 ## features
@@ -9,6 +9,8 @@ the code is available to the public and i included almost all of the weapons in 
 - able to set custom amount of recoil control
 - turns off when switching to secondary (toggleable)
 - always on top (toggleable)
+- turns off caps lock when writing in chat (toggleable)
+- auto writes gl,hf,gg,wp in chat with f1 and f2
 
 ---
 ## setup
