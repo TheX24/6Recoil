@@ -10,23 +10,21 @@ the code is available to the public and i included all of the weapons in r6
 - turns off when switching to secondary (toggleable)
 - always on top (toggleable)
 - turns off caps lock when writing in chat (toggleable)
-- auto writes gl,hf,gg,wp in chat with f1 and f2
+- auto writes glhf, ggwp and nt in chat with f1, f2 and f3 
 - random operator select for fun
 
 ---
-## setup
-1. install python from [ms store](https://apps.microsoft.com/detail/9NRWMJP3717K)
-2. install dependecies by running this in powershell: `pip install pynput;pip install sv_ttk`
-3. run the program (if you want to use my config keep following)
-4. go into shooting range
-5. select an operator
-6. select the operator's gun in the program
-7. adjust the sleep duration until there's no recoil (increase if its pulling down too much and decrease if pulling down too little)
-8. open notepad
-9. drag the program into notepad
-10. edit sleep_duration to the adjusted value
-11. save it
-12. now everytime you run it you wont have to change anything
+## setup to use my guns config
+1. download and open program
+2. go into shooting range
+3. select an operator
+4. select the operator's gun in the program
+5. adjust the sleep duration until there's no recoil (increase if its pulling down too much and decrease if pulling down too little)
+6. open notepad
+7. drag the program into notepad
+8. edit sleep_duration to the adjusted value
+9. save it
+10. now everytime you run it you wont have to change anything
 
 ---
 ## usage
