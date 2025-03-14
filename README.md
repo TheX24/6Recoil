@@ -1,5 +1,7 @@
+<img src="/6ecoil.png?raw=true" width="192" />
+
 # r6recoil
-a python program made by my beloved chatgpt to control the recoil in the famous tom clancy's book game adaptation  
+a python program made by my beloved chatgpt to control the recoil in the famous tom clancy's book game adaptation\
 the code is available to the public and i included all of the weapons in r6
 
 ---
