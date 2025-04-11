@@ -1,6 +1,6 @@
 <img src="/6Recoil.png?raw=true" width="192" />
 
-# r6recoil
+# 6Recoil
 a free python program to control the recoil\
 
 ## features
