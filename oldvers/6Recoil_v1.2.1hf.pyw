@@ -138,6 +138,10 @@ def on_press(key):
             if is_caps_lock_on():
                 toggle_caps_lock(False)
                 print("T pressed, Caps Lock turned off")
+        elif hasattr(key, 'char') and key.char == 'y' and toggle_caps_lock_var.get():
+            if is_caps_lock_on():
+                toggle_caps_lock(False)
+                print("Y pressed, Caps Lock turned off")
         elif key == keyboard.Key.enter and toggle_caps_lock_var.get():
             if not is_caps_lock_on():
                 toggle_caps_lock(True)
