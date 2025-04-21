@@ -1,40 +1,91 @@
-<img src="/6Recoil.png?raw=true" width="192" />
-
 # 6Recoil
-a free python program to control the recoil
 
-## features
-- start/stop button
-- caps lock to toggle the script
-- able to set custom amount of recoil control
-- turns off when switching to secondary (toggleable)
-- always on top (toggleable)
-- turns off caps lock when writing in chat (toggleable)
-- auto writes glhf, ggwp, nt, nice team, good job in chat with f1-f5 keys (customizable)
-- random operator select for fun
+<div align="center">
+  <img src="/6Recoil.png?raw=true" width="192" alt="6Recoil Logo" />
+  
+  [![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
+</div>
 
-## setup
-1. download and open program
-2. go into shooting range
-3. select an operator
-4. turn on custom speed
-5. put the gun's rpm
-6. adjust the values until there's no recoil (vert: increase if there's recoil; horiz: positive moves to the right, negative moves to the left)
-7. open the _internal folder
-8. open speed_options_new.txt
-9. delete everything
-10. add the guns using this format: `{name} = {vertical}, {horizontal}, {rpm}`
-12. save it
-13. now everytime you run it you wont have to change anything
+## Overview
+6Recoil is a Python-based recoil control program.
 
-## usage
-1. open program
-2. click start
-3. scroll on the box or select the current gun (automatically applies)
-4. turn on caps lock
-5. ads and shoot
+## Features
+- 🎮 **Easy Controls**
+  - Start/Stop button for quick activation
+  - Caps Lock toggle functionality
+  - Always-on-top window option
+  - Automatic chat message shortcuts (F1-F5)
+  - Random operator selection
 
-## build
-1. download repository as zip or clone with git
-2. install dependecies
-3. just use it or build with either pyinstaller with this command: `pyinstaller --name "6Recoil" --windowed --icon=icon.ico --add-data "attack_operators.txt;." --add-data "defense_operators.txt;." --add-data "speed_options_new.txt;." --add-data "icon.ico;." --add-data "config.ini;." 6Recoil_v1.4.pyw` or build it with your favourite builder
+- ⚙️ **Customization**
+  - Adjustable vertical and horizontal recoil control
+  - Customizable RPM settings per weapon
+  - Toggle options for:
+    - Secondary weapon auto-disable
+    - Caps Lock chat writing
+    - Window always-on-top
+
+- 💬 **Chat Integration**
+  - Quick chat messages (F1-F5):
+    - "good luck have fun"
+    - "good game well played"
+    - "nice try"
+    - "nice shot"
+    - "good job"
+  - Customizable chat messages
+
+## Installation
+1. Download the latest release from the releases page
+2. Extract the files to your preferred location
+3. Run `6Recoil v1.4.exe`
+
+## Setup Guide
+1. Launch the program
+2. Enter the shooting range
+3. Select an operator
+4. Enable custom speed settings
+5. Configure the weapon's RPM
+6. Fine-tune recoil values:
+   - Vertical: Increase if recoil is present
+   - Horizontal: Positive values move right, negative values move left
+7. Configure weapon presets:
+   - Navigate to the `_internal` folder
+   - Open `speed_options_new.txt`
+   - Clear existing content
+   - Add weapons using format: `{name} = {vertical}, {horizontal}, {rpm}`
+   - Save the file
+
+## Usage
+1. Launch 6Recoil
+2. Click the Start button
+3. Select your current weapon (auto-applies settings)
+4. Toggle Caps Lock to activate
+5. ADS and shoot
+
+## Building from Source
+### Prerequisites
+- Python 3.x
+- Required dependencies (see requirements.txt)
+
+### Build Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/TheX24/6Recoil.git
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Build using PyInstaller:
+   ```bash
+   pyinstaller --name "6Recoil" --windowed --icon=icon.ico --add-data "attack_operators.txt;." --add-data "defense_operators.txt;." --add-data "speed_options_new.txt;." --add-data "icon.ico;." --add-data "config.ini;." 6Recoil_v1.4.pyw
+   ```
+
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+This project is licensed under the AGPL-3.0 License - see the [LICENSE](LICENSE) file for details.
+
+## Disclaimer
+This software is for educational purposes only. Use at your own risk and ensure compliance with the terms of service of the games you play.
