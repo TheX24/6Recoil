@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+>
+> ## I haven't been playing the game much lately, so I probably won't be updating the program very often, if at all.
+
 # 6Recoil
 
 <div align="center">
