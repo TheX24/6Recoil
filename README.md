@@ -1,17 +1,12 @@
 > [!IMPORTANT]
 >
 > ## I haven't been playing the game much lately, so I probably won't be updating the program very often, if at all.
-
-# 6Recoil
+> 
 
 <div align="center">
-  <img src="/6Recoil.png?raw=true" width="192" alt="6Recoil Logo" />
-  
-  [![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
+  <img src="/6Recoilbanner.png?raw=true" alt="6Recoil Banner" />
+  <img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg"/>
 </div>
-
-## Overview
-6Recoil is a Python-based recoil control program.
 
 ## Features
 - 🎮 **Easy Controls**
