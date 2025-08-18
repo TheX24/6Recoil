@@ -16,10 +16,12 @@
   - Always-on-top window option
   - Automatic chat message shortcuts (F1-F5)
   - Random operator selection
+  - Natural recoil variation to avoid detection
 
 - ⚙️ **Customization**
   - Adjustable vertical and horizontal recoil control
   - Customizable RPM settings per weapon
+  - Adjustable recoil variation for natural-looking patterns
   - Toggle options for:
     - Secondary weapon auto-disable
     - Caps Lock chat writing
@@ -37,7 +39,7 @@
 ## Installation
 1. Download the latest release from the releases page
 2. Extract the files to your preferred location
-3. Run `6Recoil v1.4.exe`
+3. Run `6Recoil v1.4.1.exe`
 
 ## Setup Guide
 1. Launch the program
@@ -78,7 +80,7 @@
    ```
 3. Build using PyInstaller:
    ```bash
-   pyinstaller --name "6Recoil" --windowed --icon=icon.ico --add-data "attack_operators.txt;." --add-data "defense_operators.txt;." --add-data "speed_options_new.txt;." --add-data "icon.ico;." --add-data "config.ini;." 6Recoil_v1.4.pyw
+   pyinstaller --name "6Recoil" --windowed --icon=icon.ico --add-data "attack_operators.txt;." --add-data "defense_operators.txt;." --add-data "speed_options_new.txt;." --add-data "icon.ico;." --add-data "config.ini;." 6Recoil_v1.4.1.pyw
    ```
 
 ## Contributing
