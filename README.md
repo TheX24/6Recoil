@@ -1,7 +1,5 @@
-> [!IMPORTANT]
->
-> ## 1.4 is probably the last major feature update of 6Recoil
-> 
+> [!CAUTION]
+> ## With Y10S3 - Operation High Stakes, the script may be detected. Use at your own risk.
 
 <div align="center">
   <img src="/6Recoilbanner.png?raw=true" alt="6Recoil Banner" />
