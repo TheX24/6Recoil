@@ -1,13 +1,10 @@
-# 6Recoil
+> [!CAUTION]
+> ## With Y10S3 - Operation High Stakes, the script may be detected. Use at your own risk.
 
 <div align="center">
-  <img src="/6Recoil.png?raw=true" width="192" alt="6Recoil Logo" />
-  
-  [![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
+  <img src="/6Recoilbanner.png?raw=true" alt="6Recoil Banner" />
+  <img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg"/>
 </div>
-
-## Overview
-6Recoil is a Python-based recoil control program.
 
 ## Features
 - 🎮 **Easy Controls**
