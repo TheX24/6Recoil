@@ -1,12 +1,15 @@
+# 6Recoil
+
 > [!CAUTION]
-> ## With Y10S3 - Operation High Stakes, the script may be detected. Use at your own risk.
+> With Y10S3 - Operation High Stakes, the script may be detected. Use at your own risk.
 
 <div align="center">
   <img src="/6Recoilbanner.png?raw=true" alt="6Recoil Banner" />
-  <img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg"/>
+  <img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="AGPL-3.0 License"/>
 </div>
 
 ## Features
+
 - 🎮 **Easy Controls**
   - Start/Stop button for quick activation
   - Caps Lock toggle functionality
@@ -34,11 +37,13 @@
   - Customizable chat messages
 
 ## Installation
+
 1. Download the latest release from the releases page
 2. Extract the files to your preferred location
 3. Run `6Recoil v1.4.1.exe`
 
 ## Setup Guide
+
 1. Launch the program
 2. Enter the shooting range
 3. Select an operator
@@ -55,6 +60,7 @@
    - Save the file
 
 ## Usage
+
 1. Launch 6Recoil
 2. Click the Start button
 3. Select your current weapon (auto-applies settings)
@@ -62,29 +68,40 @@
 5. ADS and shoot
 
 ## Building from Source
+
 ### Prerequisites
+
 - Python 3.x
 - Required dependencies (see requirements.txt)
 
 ### Build Steps
+
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/TheX24/6Recoil.git
    ```
+
 2. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
+
 3. Build using PyInstaller:
+
    ```bash
    pyinstaller --name "6Recoil" --windowed --icon=icon.ico --add-data "attack_operators.txt;." --add-data "defense_operators.txt;." --add-data "speed_options_new.txt;." --add-data "icon.ico;." --add-data "config.ini;." 6Recoil_v1.4.1.pyw
    ```
 
 ## Contributing
+
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
+
 This project is licensed under the AGPL-3.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## Disclaimer
+
 This software is for educational purposes only. Use at your own risk and ensure compliance with the terms of service of the games you play.

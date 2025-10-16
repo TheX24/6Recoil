@@ -258,8 +258,9 @@ def start_moving():
             if move_dx != 0 or move_dy != 0:
                 pydirectinput.moveRel(move_dx, move_dy, relative=True, disable_mouse_acceleration=True, _pause=False, duration=sleep_duration)
         else:
-            # Original movement without variation
-            pydirectinput.moveRel(mouse_hspeed, mouse_vspeed, relative=True, disable_mouse_acceleration=True, _pause=False, duration=sleep_duration)
+            while both_buttons_held and active and listener_active:
+                # Original movement without variation
+                pydirectinput.moveRel(mouse_hspeed, mouse_vspeed, relative=True, disable_mouse_acceleration=True, _pause=False, duration=sleep_duration)
         if moving:
             print("Stopped moving mouse")
             moving = False
@@ -458,7 +459,7 @@ def run_listener():
 toggle_button = ttk.Button(frame, text="Start", command=toggle_program)
 toggle_button.grid(row=6, column=1, columnspan=4, padx=5, pady=5, ipadx=78, sticky=tk.W)
 
-credits_label = ttk.Label(frame, text="Made by TX24 (v1.4.1)")
+credits_label = ttk.Label(frame, text="Made by TX24 (v1.4.2)")
 credits_label.grid(row=5, column=0, padx=5, pady=5, sticky=tk.W)
 
 # Function to toggle the "always on top" attribute

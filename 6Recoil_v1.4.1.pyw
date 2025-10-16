@@ -97,6 +97,7 @@ custom_vspeed = 0  # Custom speed value
 custom_hspeed = 0  # Custom speed value
 v_remainder = 0.0
 h_remainder = 0.0
+rpm_remainder = 0.0
 
 def set_rpm(duration):
     global rpm
@@ -227,7 +228,7 @@ move_mouse_lock = threading.Lock()
 def start_moving():
     global moving
     def move_mouse():
-        global moving, rpm, v_remainder, h_remainder, variation_var, variation_range
+        global moving, rpm, v_remainder, h_remainder, variation_var, variation_range, rpm_remainder
         if not moving:
             print("Started moving mouse")
             print(f"RPM: {rpm}")
@@ -242,26 +243,32 @@ def start_moving():
                 # Add small random variation (e.g., ±0.3 pixels)
                 dx_variation = random.uniform(-float(variation_range), float(variation_range))
                 dy_variation = random.uniform(-float(variation_range), float(variation_range))
+                rpm_variation = random.uniform(-float(variation_range), float(variation_range))
             else:
                 dx_variation = 0
                 dy_variation = 0
+                rpm_variation = 0
             
             # Add to remainders
             total_dx = dx + dx_variation + h_remainder
             total_dy = dy + dy_variation + v_remainder
+            total_rpm = rpm + rpm_variation
             
             # Calculate integer moves and new remainders
             move_dx = int(round(total_dx))
             move_dy = int(round(total_dy))
+            move_rpm = int(round(total_rpm))
             h_remainder = total_dx - move_dx
             v_remainder = total_dy - move_dy
+            rpm_remainder = total_rpm - move_rpm
             
             # Only move if we have at least 1 pixel to move
             if move_dx != 0 or move_dy != 0:
-                pydirectinput.moveRel(move_dx, move_dy, relative=True, disable_mouse_acceleration=True, _pause=False, duration=rpm)
+                pydirectinput.moveRel(move_dx, move_dy, relative=True, disable_mouse_acceleration=True, _pause=False, duration=move_rpm)
         else:
-            # Original movement without variation
-            pydirectinput.moveRel(mouse_hspeed, mouse_vspeed, relative=True, disable_mouse_acceleration=True, _pause=False, duration=rpm)
+            while both_buttons_held and active and listener_active:
+                # Original movement without variation
+                pydirectinput.moveRel(mouse_hspeed, mouse_vspeed, relative=True, disable_mouse_acceleration=True, _pause=False, duration=rpm)
         if moving:
             print("Stopped moving mouse")
             moving = False
@@ -477,7 +484,7 @@ def run_listener():
 toggle_button = ttk.Button(frame, text="Start", command=toggle_program)
 toggle_button.grid(row=6, column=1, columnspan=4, padx=5, pady=5, ipadx=78, sticky=tk.W)
 
-credits_label = ttk.Label(frame, text="Made by TX24 (v1.4.1)")
+credits_label = ttk.Label(frame, text="Made by TX24 (v1.4.2)")
 credits_label.grid(row=5, column=0, padx=5, pady=5, sticky=tk.W)
 
 # Function to toggle the "always on top" attribute
